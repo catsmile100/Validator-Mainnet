@@ -75,7 +75,7 @@ curl -g -d '{ "action": "version"}' 'localhost:7076'
 10- Block Count [wait "unchecked" = 0]
 ```
 curl -g -d '{ "action": "block_count"}' 'localhost:7076'
-​```
+```
 
 11- Create New Wallet ID
 save %WALLET_ID
@@ -86,15 +86,15 @@ curl -g -d '{ "action": "wallet_create"}' 'localhost:7076'
 12- Create New Wallet Account (Xro_)
 ```
 curl -g -d '{ "action": "account_create", "wallet": "%WALLET_ID% "}' 'localhost:7076'
-​```
+```
 
 13- Backup SEED:
-​```
+```
 docker exec -it raione-node /bin/bash
-​```
-​```
+```
+```
 /usr/bin/./nano_node --wallet_decrypt_unsafe --wallet=%YOUR_WALLLET_ID%
-​```
+```
 
 14- Import Wallet 
 - Go to https://vault.raione.cc/accounts
