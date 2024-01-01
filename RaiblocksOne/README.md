@@ -105,7 +105,9 @@ docker exec -it raione-node /bin/bash
 - Input New Representative same to your wallet account
 
 16- Minimum 1 Xro for active
+
 Faucet : https://faucet-xro.codeblocklabs.com/index.php
+
 Faucet : https://monke42.tk/
 
 17- Confirm in Discord if node is ready
