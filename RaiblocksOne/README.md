@@ -54,12 +54,12 @@ enable_voting = true
 ```
 7- Change RPC Settings
 
-// change the value of enable_control to true
+change enable_control = true
 ```
 sudo nano raiblocksone/Nano/config-rpc.toml
 ```
 
-8- Restart The Services
+8- Restart Services
 ```
 docker restart raione-node
 ```
@@ -69,7 +69,7 @@ docker restart raione-node
 curl -g -d '{ "action": "version"}' 'localhost:7076'
 ```
 10- Block Count
-tunggu sampai nilai "unchecked" menjadi 0
+wait "unchecked" = 0
 ```
 curl -g -d '{ "action": "block_count"}' 'localhost:7076'
 ​```
@@ -104,6 +104,8 @@ docker exec -it raione-node /bin/bash
 - Select Account to change to All current accounts
 - Input New Representative same to your wallet account
 
-16- Minimum 1 Xro for active 
+16- Minimum 1 Xro for active
 Faucet : https://faucet-xro.codeblocklabs.com/index.php
 Faucet : https://monke42.tk/
+
+17- Confirm in Discord if node is ready
