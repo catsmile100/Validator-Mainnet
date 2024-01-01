@@ -29,10 +29,12 @@ apt update -y && apt upgrade -y && apt autoremove -y && apt install screen curl 
 ```
 apt install docker.io -y
 ```
+
 3- Pull Images From Docker Hub
 ```
 docker pull raiblocksone/raione:R1_V.02
 ```
+
 4- Run Nodes Once To Get Settings File
 ```
 docker run --restart=unless-stopped -d -p 7075:7075 -p 127.0.0.1:7076:7076 -p 127.0.0.1:7078:7078 -v /root/raiblocksone/:/root --name raione-node raiblocksone/raione:R1_V.02 
@@ -52,6 +54,7 @@ Edit config-node.toml [Copy this code at the top of file config-node.toml]
 ​
 enable_voting = true
 ```
+
 7- Change RPC Settings
 
 change enable_control = true
@@ -68,16 +71,18 @@ docker restart raione-node
 ```
 curl -g -d '{ "action": "version"}' 'localhost:7076'
 ```
-10- Block Count
-wait "unchecked" = 0
+
+10- Block Count [wait "unchecked" = 0]
 ```
 curl -g -d '{ "action": "block_count"}' 'localhost:7076'
 ​```
+
 11- Create New Wallet ID
 save %WALLET_ID
 ```
 curl -g -d '{ "action": "wallet_create"}' 'localhost:7076'
 ```
+
 12- Create New Wallet Account (Xro_)
 ```
 curl -g -d '{ "action": "account_create", "wallet": "%WALLET_ID% "}' 'localhost:7076'
@@ -105,9 +110,7 @@ docker exec -it raione-node /bin/bash
 - Input New Representative same to your wallet account
 
 16- Minimum 1 Xro for active
-
-Faucet : https://faucet-xro.codeblocklabs.com/index.php
-
-Faucet : https://monke42.tk/
+- Faucet : https://faucet-xro.codeblocklabs.com/index.php
+- Faucet : https://monke42.tk/
 
 17- Confirm in Discord if node is ready
