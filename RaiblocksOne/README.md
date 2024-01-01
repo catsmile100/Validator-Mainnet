@@ -1,5 +1,6 @@
 # RaiblocksOne Mainnet
 
+![logo](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/e1097346-f60e-4404-a74a-878a7557ceff)
 
 
 ### Documentation
@@ -14,7 +15,7 @@
 ### Minimum Hardware :
 OS  | CPU     | RAM      | SSD     | 
 | ------------- | ------------- | ------------- | -------- |
-| Ubuntu 20.04 | 2          | 120 GB         |   | 
+| Ubuntu 20.04 | 2 GB     | 4 GB       | 120 GB     | 
 
 
 ### Installation
