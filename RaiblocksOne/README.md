@@ -15,7 +15,7 @@
 ### Minimum Hardware :
 OS  | CPU     | RAM      | SSD     | 
 | ------------- | ------------- | ------------- | -------- |
-| Ubuntu 20.04 | 2 GB     | 4 GB       | 120 GB     | 
+| Ubuntu 20.04 | 2      | 4 GB       | 120 GB     | 
 
 
 ### Installation
