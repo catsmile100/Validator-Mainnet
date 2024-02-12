@@ -29,6 +29,7 @@ OS  | CPU     | RAM      | SSD     |
 ### Mint BFT
  - [MINT](https://mint.powerloom.network/)
 
+### UPDATE : SOON
 
 ### Install
 ~~~
