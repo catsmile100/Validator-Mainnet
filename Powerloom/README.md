@@ -48,6 +48,6 @@ cd powerloom
 screen -S powerloom
 ./build.sh
 ~~~
-- SOURCE_RPC_URL: Use any Ethereum Mainnet RPC, such as Ankr, Infura, or Alchemy.
-  SIGNER_ACCOUNT_ADDRESS: Utilize a burner wallet for the signer account address. Please DO NOT use your main/primary wallet.
-- SIGNER_ACCOUNT_PRIVATE_KEY: Use the private key from your burner wallet.
+- *`SOURCE_RPC_URL`: Use any Ethereum Mainnet RPC, such as Ankr, Infura, or Alchemy*
+- *`SIGNER_ACCOUNT_ADDRESS`: Utilize a burner wallet for the signer account address. Please DO NOT use your main/primary wallet*
+- *`SIGNER_ACCOUNT_PRIVATE_KEY`: Use the private key from your burner wallet*
