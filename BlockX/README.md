@@ -1,5 +1,11 @@
-# BlockX
-![BlockX](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/c663dab8-87f7-48b6-aa64-22f608530c5b)
+<p align="center">
+  <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/c663dab8-87f7-48b6-aa64-22f608530c5b">
+
+</p>
+<h1>
+<p align="center">  BlockX </p>
+</h1>
+
 
 ### Documentation
 > - [Site](https://www.blockxnet.com/)
