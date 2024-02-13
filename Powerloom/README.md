@@ -26,9 +26,13 @@ OS  | CPU     | RAM      | SSD     |
 | Ubuntu 22.04 | 4         | 4 GB	         | 40 GB   | 
 
 
-### Mint BFT
- - [MINT](https://mint.powerloom.network/)
-
+### Dasboard
+- *`MINT NFT`: [MINT](https://mint.powerloom.network/)*
+- *`Connect Wallet NFT `: [Dashboard](https://snapshotter-dashboard.powerloom.network/)*
+- *`Input burner Wallet / wallet in node`*
+- *`Bind Twitter`*
+- *`Bind Discord`*
+- *`KYC`*
 ### Install
 ~~~
 sudo apt update && sudo apt upgrade -y
