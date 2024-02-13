@@ -1,8 +1,8 @@
 <p align="center">
-  <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/28890eaf-4865-4f56-b61c-6a471b07edf2">
+  <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/b0bac1cd-13f5-494a-ae61-9a9818f67d3a">
 </p>
 <h1>
-<p align="center"> Nulink </p>
+<p align="center"> Pactus </p>
 </h1>
 
 <p align="center">
