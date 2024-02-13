@@ -2,9 +2,8 @@
   <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f">
 
 </p>
-
+<h1>
 <p align="center">  POWERLOOM </p>
-
 </h1>
 
 ### Official
