@@ -6,7 +6,7 @@
 
 </p>
 
-<p align="center">  POWERLOOM LITENODE </p>
+<p align="center">  POWERLOOM </p>
 
 </h1>
 
