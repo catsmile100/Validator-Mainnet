@@ -16,7 +16,7 @@
 - [Site](https://powerloom.io/)
 - [X](https://twitter.com/PowerloomHQ)
 - [Discord](https://discord.com/invite/powerloom)
-- [DOCS](https://mint.powerloom.network/)
+- [DOCS](https://docs.powerloom.io/)
 
 ### Minimum Hardware 
 
