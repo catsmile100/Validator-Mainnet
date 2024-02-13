@@ -10,7 +10,7 @@
   <a href="https://discord.com/invite/25CQFUuwJS">Discord</a> |
   <a href="https://twitter.com/NuLink">Twitter</a> |
   <a href="https://docs.nulink.org/products/stakers/nulink_worker#minimum-system-requirements">Docs</a> |
-  <a href="https://pacscan.org">Explorer</a> 
+  <a href="https://dashboard.testnet.nulink.org/">Dashboard</a> 
 </p>
 
 ### Minimum Hardware :
