@@ -1,6 +1,5 @@
 # Massa
-
-![prym](https://github.com/catsmile100/Validator-Testnet/assets/85368621/11a1060f-8ad0-45a4-9a30-ee6d58271172)
+![massa](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/e3c63ce4-b222-4daa-9bcf-0754decf41c7)
 
 ### Documentation
 > - [Site](https://massa.net/)
