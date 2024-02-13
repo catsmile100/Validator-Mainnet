@@ -26,7 +26,7 @@ OS  | CPU     | RAM      | SSD     |
 | Ubuntu 22.04 | 4         | 4 GB	         | 40 GB   | 
 
 
-### Dasboard
+### Register in *`Dasboard`*
 - *`MINT NFT`: [MINT](https://mint.powerloom.network/)*
 - *`Connect Wallet NFT `: [Dashboard](https://snapshotter-dashboard.powerloom.network/)*
 - *`Input burner Wallet / wallet in node`*
