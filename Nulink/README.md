@@ -18,56 +18,181 @@ OS  | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
 | Ubuntu 22.04 | 4          | 8         | 200 GB  | 
 
-### Preparation
+### Install
+
+1- Open Port
 ```
-sudo apt update && apt upgrade -y
-sudo apt install tmux git curl -y
-sudo apt install make clang pkg-config libssl-dev build-essential -y
+sudo ufw enable
 ```
-### Download Binary
 ```
-cd $HOME && rm -rf node_pactus && wget https://github.com/pactus-project/pactus/releases/download/v1.0.1/pactus-cli_1.0.1_linux_amd64.tar.gz && tar -xzf pactus-cli_1.0.1_linux_amd64.tar.gz && rm -rf pactus-cli_1.0.1_linux_amd64.tar.gz && mv pactus-cli_1.0.1 node_pactus && cd node_pactus
+sudo ufw allow 9151
+```
+  
+2- Pre Install
+```
+sudo apt-get update
+```
+```
+sudo apt install screen
+```
+```
+sudo apt install docker.io
+```
+3- Download Geth on your server
+```
+wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
+```
+```
+tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
+```
+4- Create Ethereum account
+```
+cd geth-linux-amd64-1.10.23-d901d853
+
+```
+```
+./geth account new --keystore ./keystore
+```
+```
+Create password
+```
+Save keystore
+```
+/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2024-02-09T13-33-06.226830019Z--bcb6caf8677408d56d54dba23e7c5879a592e005
+
 ```
 
-### Download Binary
+5- Pull the latest NuLink image
 ```
-sudo ./pactus-daemon init
-```
-
-### Run 
-```
-Screen -S pactus
-```
-```
-sudo ./pactus-daemon start
+docker pull nulink/nulink:latest
 ```
 
-### Restore Wallet 
+6- Create a directory in your host machine for later usage.
+
 ```
-./pactus-daemon init --restore "<your-mnemonic>"
+cd /root
+mkdir nulink
 ```
 
-### Wallet Seed 
+7- Edit path
+
 ```
-./pactus-wallet seed
+cp /root/geth-linux-amd64-1.10.23-d901d853/keystore/* /root/nulink
+```
+```
+chmod -R 777 /root/nulink
 ```
 
-### List of Addresses
+8- Install Python & virtual environment
+
 ```
-./pactus-wallet address all
+apt install python3-pip
+```
+```
+pip install virtualenv
+```
+```
+virtualenv /root/nulink-venv
 ```
 
-### Get Address Balance
+9- Activate the newly created virtual environment
 ```
-./pactus-wallet address balance <ADDRESS>
+source /root/nulink-venv/bin/activate
+```
+10- Install the Nulink python package
+
+```
+wget https://download.nulink.org/release/core/nulink-0.5.0-py3-none-any.whl
+```
+```
+pip install nulink-0.5.0-py3-none-any.whl
+```
+```
+source /root/nulink-venv/bin/activate
+```
+```
+python -c "import nulink"
 ```
 
-### Sending Bond
+11- Create Password.
+
 ```
-./pactus-wallet tx bond <Reward address> <Validator address> <AMOUNT>
+export NULINK_KEYSTORE_PASSWORD=<YOUR NULINK STORAGE PASSWORD>
+```
+```
+export NULINK_OPERATOR_ETH_PASSWORD=<YOUR WORKER ACCOUNT PASSWORD>
 ```
 
-### Sending Transfer
+Example:
+
 ```
-./pactus-wallet tx transfer <sender address> <receiver address> <AMOUNT>
+export NULINK_KEYSTORE_PASSWORD=12345678
+```
+```
+export NULINK_OPERATOR_ETH_PASSWORD=12345678
+```
+12. Create screen
+```
+screen -S nulink
+```
+
+13- Initialize Node Configuration
+```
+docker run -it --rm \
+-p 9151:9151 \
+-v </path/to/host/machine/directory>:/code \
+-v </path/to/host/machine/directory>:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
+nulink/nulink nulink ursula init \
+--signer <ETH KEYSTORE URI> \
+--eth-provider <NULINK PROVIDER URI>  \
+--network <NULINK NETWORK NAME> \
+--payment-provider <PAYMENT PROVIDER URI> \
+--payment-network <PAYMENT NETWORK NAME> \
+--operator-address <WORKER ADDRESS> \
+--max-gas-price <GWEI>
+```
+
+Example:
+
+```
+docker run -it --rm \
+-p 9151:9151 \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
+nulink/nulink nulink ursula init \
+--signer keystore:///code/UTC--2023-12-31T17-42-14.316243885Z--f3defb90c2f03e904bxxxxxxxxxxxxxxxxxxx \
+--eth-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
+--network horus \
+--payment-provider https://data-seed-prebsc-2-s2.binance.org:8545 \
+--payment-network bsc_testnet \
+--operator-address 0xf3defb90c2f03xxxxxxxxxxxxxxxxxxxxxxxx \
+--max-gas-price 10000000000
+```
+
+14. Prepare :
+- New Wallet for Staker with Fee tBNB
+- Fee tBNB for wallet validator /Worker
+
+15- Launch  Node
+```
+docker run -it --restart on-failure -d \
+--name ursula \
+-p 9151:9151 \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD=<your_password> \
+-e NULINK_OPERATOR_ETH_PASSWORD=<your_password> \
+nulink/nulink nulink ursula run --no-block-until-ready
+```
+
+16- Check Node Status
+```
+docker logs -f ursula
+```
+
+17. Detach
+```
+CTRL a d
 ```
