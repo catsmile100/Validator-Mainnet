@@ -1,6 +1,5 @@
 # BlockX
-
-![prym](https://github.com/catsmile100/Validator-Testnet/assets/85368621/11a1060f-8ad0-45a4-9a30-ee6d58271172)
+![BlockX](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/c663dab8-87f7-48b6-aa64-22f608530c5b)
 
 ### Documentation
 > - [Site](https://www.blockxnet.com/)
