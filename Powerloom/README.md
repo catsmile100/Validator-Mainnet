@@ -1,8 +1,5 @@
-<h1 align="centre"> 
-
-<p align="center">  
-    
-![powerloom](https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f)
+<p align="center">
+  <img height="250" height="250" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f">
 
 </p>
 
