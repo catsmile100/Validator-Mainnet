@@ -1,13 +1,11 @@
 <p align="center">
-  <img height="250" height="250" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f">
+  <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f">
 
 </p>
 
 <p align="center">  POWERLOOM </p>
 
 </h1>
-
-
 
 ### Official
 - [Site](https://powerloom.io/)
