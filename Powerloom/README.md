@@ -27,40 +27,52 @@ OS  | CPU     | RAM      | SSD     |
 - *`Bind Twitter`*
 - *`Bind Discord`*
 - *`KYC`*
-### Install
+### Update and Upgrade
 ~~~
-sudo apt update && sudo apt upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 ~~~
+### Install Git
 ~~~
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo apt-get install git -y
 ~~~
-~~~
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-~~~
+### Install Docker and Docker Compose
 ~~~
 sudo apt-get update
+sudo apt-get install ca-certificates curl 
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 ~~~
 ~~~
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+~~~
+### Docker repository
+~~~
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+~~~
+### Cloning the Repository
+~~~
+git clone https://github.com/PowerLoom/snapshotter-lite powerloom-testnet
 ~~~
 ~~~
-sudo docker --version
+cd powerloom-testnet
 ~~~
-### Clone
-~~~
-git clone -b simulation_mode https://github.com/PowerLoom/snapshotter-lite powerloom
-cd powerloom
-~~~
-
-### Settup & RUN
+### Sett Screen
 ~~~
 screen -S powerloom
+~~~
+### RUN
+~~~
 ./build.sh
 ~~~
 - *`SOURCE_RPC_URL`: Use any Ethereum Mainnet RPC, such as Ankr, Infura, or Alchemy*
 - *`SIGNER_ACCOUNT_ADDRESS`: Utilize a burner wallet for the signer account address. Please DO NOT use your main/primary wallet*
 - *`SIGNER_ACCOUNT_PRIVATE_KEY`: Use the private key from your burner wallet*
-
+- *`SLOT_ID`: To assign your node to a specific slot, please provide the corresponding Slot ID or NFT ID. You can locate your NFT ID within your transaction details on PolygonScan*
 ### Detach
 ~~~
 CTRL a + d
