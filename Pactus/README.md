@@ -62,7 +62,7 @@ sudo ./pactus-daemon start
 ./pactus-wallet address balance <ADDRESS>
 ```
 
-### Sending Bond
+### Sending Bond / ReStake
 ```
 ./pactus-wallet tx bond <Reward address> <Validator address> <AMOUNT>
 ```
