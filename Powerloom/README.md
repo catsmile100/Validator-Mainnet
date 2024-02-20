@@ -77,3 +77,11 @@ screen -S powerloom
 ~~~
 CTRL a + d
 ~~~
+### Update
+~~~
+git pull
+~~~
+~~~
+./build.sh
+~~~
+
