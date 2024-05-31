@@ -75,7 +75,10 @@ sudo ./pactus-daemon start
 ### UPDATE [Pactus latest]
 ```
 screen -r pactus
-cd $HOME && rm -rf node_pactus  
+cd $HOME && rm -rf node_pactus
+```
+Crl C
+```
 wget https://github.com/pactus-project/pactus/releases/download/v1.1.6/pactus-cli_1.1.6_linux_amd64.tar.gz  
 tar -xzf pactus-cli_1.1.6_linux_amd64.tar.gz  
 rm -rf pactus-cli_1.1.6_linux_amd64.tar.gz 
