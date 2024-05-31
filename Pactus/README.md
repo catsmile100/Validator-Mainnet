@@ -72,7 +72,7 @@ sudo ./pactus-daemon start
 ./pactus-wallet tx transfer <sender address> <receiver address> <AMOUNT>
 ```
 
-### UPDATE [Pactus 1.0.2]
+### UPDATE [Pactus latest]
 ```
 screen -r pactus
 cd $HOME && rm -rf node_pactus  
