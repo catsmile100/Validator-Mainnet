@@ -21,8 +21,7 @@ OS  | CPU     | RAM      | SSD     |
 ### Preparation
 ```
 sudo apt update && apt upgrade -y
-sudo apt install tmux git curl -y
-sudo apt install make clang pkg-config libssl-dev build-essential -y
+sudo apt install make clang pkg-config libssl-dev screen build-essential -y
 ```
 ### Download Binary
 ```
