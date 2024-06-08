@@ -76,7 +76,7 @@ select / input : 1
 ./pactus-wallet tx transfer <sender address> <receiver address> <AMOUNT>
 ```
 
-### UPDATE [Pactus latest]
+### UPDATE
 ```
 screen -r pactus
 cd $HOME && rm -rf node_pactus
