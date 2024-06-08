@@ -26,7 +26,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential -y
 ```
 ### Download Binary
 ```
-cd $HOME && rm -rf node_pactus && wget https://github.com/pactus-project/pactus/releases/download/v1.0.1/pactus-cli_1.0.1_linux_amd64.tar.gz && tar -xzf pactus-cli_1.0.1_linux_amd64.tar.gz && rm -rf pactus-cli_1.0.1_linux_amd64.tar.gz && mv pactus-cli_1.0.1 node_pactus && cd node_pactus
+cd $HOME && rm -rf node_pactus && wget https://github.com/pactus-project/pactus/releases/download/v1.1.8/pactus-cli_1.1.8_linux_amd64.tar.gz && tar -xzf pactus-cli_1.1.8_linux_amd64.tar.gz && rm -rf pactus-cli_1.1.8_linux_amd64.tar.gz && mv pactus-cli_1.1.8 node_pactus && cd node_pactus
 ```
 
 ### Download Binary
@@ -36,7 +36,7 @@ sudo ./pactus-daemon init
 
 ### Run 
 ```
-Screen -S pactus
+screen -S pactus
 ```
 ```
 sudo ./pactus-daemon start
