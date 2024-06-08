@@ -42,9 +42,14 @@ screen -S pactus
 sudo ./pactus-daemon start
 ```
 
-### Restore Wallet 
+### Restore Wallet [If you already have a wallet before]
 ```
 ./pactus-daemon init --restore "<your-mnemonic>"
+```
+
+### Sett Validator Running
+```
+select / input : 1
 ```
 
 ### Wallet Seed 
