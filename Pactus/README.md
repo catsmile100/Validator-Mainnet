@@ -102,7 +102,6 @@ cd node_pactus
 screen -S pactus
 ./pactus-daemon version
 ./pactus-daemon init --restore "<your-mnemonic>"
-select / input : 1 
 sudo ./pactus-daemon start
-crtl ad
 ```
+Sett Validator Running : select / input : 1
