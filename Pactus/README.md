@@ -83,10 +83,10 @@ cd $HOME && rm -rf node_pactus
 ```
 Crl C
 ```
-wget https://github.com/pactus-project/pactus/releases/download/v1.1.8/pactus-cli_1.1.8_linux_amd64.tar.gz  
-tar -xzf pactus-cli_1.1.8_linux_amd64.tar.gz  
-rm -rf pactus-cli_1.1.8_linux_amd64.tar.gz 
-mv pactus-cli_1.1.8 node_pactus 
+wget https://github.com/pactus-project/pactus/releases/download/v1.2.0-rc2/pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
+tar -xzf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
+rm -rf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz 
+mv pactus-cli_1.2.0-rc2 node_pactus 
 cd node_pactus
 ./pactus-daemon version
 sudo ./pactus-daemon start
