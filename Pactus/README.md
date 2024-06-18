@@ -91,3 +91,18 @@ cd node_pactus
 ./pactus-daemon version
 sudo ./pactus-daemon start
 ```
+### MIGRATION
+STOP OLD VPS PACTUS 
+```
+wget https://github.com/pactus-project/pactus/releases/download/v1.2.0-rc2/pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
+tar -xzf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
+rm -rf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz 
+mv pactus-cli_1.2.0-rc2 node_pactus 
+cd node_pactus
+screen -S pactus
+./pactus-daemon version
+./pactus-daemon init --restore "<your-mnemonic>"
+select / input : 1 
+sudo ./pactus-daemon start
+crtl ad
+```
