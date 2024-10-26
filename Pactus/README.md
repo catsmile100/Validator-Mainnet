@@ -25,7 +25,7 @@ sudo apt install make clang pkg-config libssl-dev screen build-essential -y
 ```
 ### Download Binary
 ```
-cd $HOME && rm -rf node_pactus && wget https://github.com/pactus-project/pactus/releases/download/v1.4.0/pactus-cli_1.4.0_linux_amd64.tar.gz && tar -xzf pactus-cli_1.4.0_linux_amd64.tar.gz && rm -rf pactus-cli_1.4.0_linux_amd64.tar.gz && mv pactus-cli_1.4.0 node_pactus && cd node_pactus
+cd $HOME && rm -rf node_pactus && wget https://github.com/pactus-project/pactus/releases/download/v1.5.0/pactus-cli_1.5.0_linux_amd64.tar.gz && tar -xzf pactus-cli_1.5.0_linux_amd64.tar.gz && rm -rf pactus-cli_1.5.0_linux_amd64.tar.gz && mv pactus-cli_1.5.0 node_pactus && cd node_pactus
 ```
 
 ### Download Binary
