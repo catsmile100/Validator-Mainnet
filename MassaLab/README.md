@@ -14,11 +14,11 @@
   <a href="https://docs.massa.net/docs/node/install">Docs</a> 
 </p>
 
-Minimum Hardware :
-OS  | CPU     | RAM      | SSD     | 
-| ------------- | ------------- | ------------- | -------- |
-| Ubuntu 22.04 | 4          | 8         | 400 GB  | 
+Minimum Hardware:
 
+| OS | CPU | RAM | SSD |
+|----|-----|-----|-----|
+| Ubuntu 22.04 | 4 | 8 | 400 GB |
 Install Dependencies
 ```
 sudo apt update
