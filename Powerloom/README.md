@@ -2,22 +2,24 @@
   <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/d7ef9a12-fdab-4da7-a7fc-b17a77bd4c9f">
 
 </p>
-<h1>
-<p align="center">  POWERLOOM </p>
-</h1>
+<h2>
+<p align="center"> Powerloom </p>
+<p align="center"> Powerloom is a consensus-backed data network protocol that enables builders to create verifiable data applications in Web3, offering flexible data markets with pre-computed APIs and validated datasets through lightweight, easily deployable nodes that ensure data integrity through cryptographic proofs </p>
+</h2>
 
-### Official
-- [Site](https://powerloom.io/)
-- [X](https://twitter.com/PowerloomHQ)
-- [Discord](https://discord.com/invite/powerloom)
-- [DOCS](https://docs.powerloom.io/)
+<p align="center">
+  <a href="https://powerloom.io/">Home</a> |
+  <a href="https://discord.com/invite/powerloom">Discord</a> |
+  <a href="https://twitter.com/PowerloomHQ">Twitter</a> |
+  <a href="https://docs.powerloom.io/">Docs</a> 
+</p>
 
-### Minimum Hardware 
 
-#### LineNode
-OS  | CPU     | RAM      | SSD     | 
-| ------------- | ------------- | ------------- | -------- |
-| Ubuntu 22.04 | 4         | 4 GB	         | 40 GB   | 
+Minimum Hardware:
+
+| OS | CPU | RAM | SSD |
+|:---|:---|:---|:---|
+| Ubuntu 22.04 | 4 | 8 | 400 GB |
 
 
 ### Register in *`Dasboard`*
