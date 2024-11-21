@@ -12,10 +12,12 @@
   <a href="https://ping.blockxnet.com/">Explorer</a> 
 </p>
 
+
 ### Minimum Hardware :
 OS  | CPU     | RAM      | SSD     | 
 | ------------- | ------------- | ------------- | -------- |
-| Ubuntu 22.04 | 4          | 8         | 400 GB  | 
+| Ubuntu 22.04 | 4          | 8         | 400  | 
+
 
 ### Setup Server
 ```
