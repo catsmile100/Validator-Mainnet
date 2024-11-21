@@ -15,7 +15,7 @@
 Minimum Hardware:
 
 | OS | CPU | RAM | SSD |
-|:---|:----|:----|:----|
+|:---|:---|:---|:---|
 | Ubuntu 22.04 | 4 | 8 | 400 GB |
 
 Setup Server
