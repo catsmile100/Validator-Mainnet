@@ -12,19 +12,11 @@
   <a href="https://ping.blockxnet.com/">Explorer</a> 
 </p>
 
-
-### Minimum Hardware :
-OS  | CPU     | RAM      | SSD     | 
-| ------------- | ------------- | ------------- | -------- |
-| Ubuntu 22.04 | 4          | 8         | 400  | 
-
-
 ### Setup Server
 ```
 sudo apt update && apt upgrade -y
 sudo apt install curl git jq lz4 build-essential unzip fail2ban ufw -y
 ```
-
 ### Set Firewall
 ```
 sudo ufw default allow outgoing
