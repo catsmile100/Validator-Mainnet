@@ -1,16 +1,16 @@
 <p align="center">
   <img height="350" height="350" src="https://github.com/catsmile100/Validor-Mainnet/assets/85368621/c663dab8-87f7-48b6-aa64-22f608530c5b">
 
+</h2>
+<p align="center"> BlockX </p>
+<p align="center"> BlockX is a comprehensive Web3 ecosystem that combines Layer 1 blockchain, SupperWallet, and GPT Core to provide decentralized infrastructure for DePIN, AI, and Web3 applications. The project aims to revolutionize decentralized computing by offering secure asset management, GPU-as-a-Service, and venture studio support for building essential dApps in the Web3 space </p>
+</h2>
+
+<p align="center">
+  <a href="https://www.blockxnet.com/">Home</a> |
+  <a href="https://twitter.com/BlockXnet">Twitter</a> |
+  <a href="https://ping.blockxnet.com/">Explorer</a> 
 </p>
-<h1>
-<p align="center">  BlockX </p>
-</h1>
-
-
-### Documentation
-> - [Site](https://www.blockxnet.com/)
-> - [X](https://twitter.com/BlockXnet)
-> - [Explorer](https://ping.blockxnet.com/)
 
 ### Minimum Hardware :
 OS  | CPU     | RAM      | SSD     | 
