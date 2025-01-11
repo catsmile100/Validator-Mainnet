@@ -93,25 +93,23 @@ cd $HOME && rm -rf node_pactus
 ```
 Crl C
 ```
-wget https://github.com/pactus-project/pactus/releases/download/v1.2.0-rc2/pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
-tar -xzf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
-rm -rf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz 
-mv pactus-cli_1.2.0-rc2 node_pactus 
-cd node_pactus
-./pactus-daemon version
-sudo ./pactus-daemon start
+LATEST=$(curl -s https://api.github.com/repos/pactus-project/pactus/releases/latest | grep "tag_name" | cut -d'"' -f4) && \
+rm -rf node_pactus && \
+wget https://github.com/pactus-project/pactus/releases/download/${LATEST}/pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+tar -xzf pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+rm -rf pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+mv pactus-cli_${LATEST#v} node_pactus && \
+cd node_pactus  && sudo ./pactus-daemon start
 ```
 ### MIGRATION
 STOP OLD VPS PACTUS 
 ```
-wget https://github.com/pactus-project/pactus/releases/download/v1.2.0-rc2/pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
-tar -xzf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz  
-rm -rf pactus-cli_1.2.0-rc2_linux_amd64.tar.gz 
-mv pactus-cli_1.2.0-rc2 node_pactus 
-cd node_pactus
-screen -S pactus
-./pactus-daemon version
-./pactus-daemon init --restore "<your-mnemonic>"
-sudo ./pactus-daemon start
+LATEST=$(curl -s https://api.github.com/repos/pactus-project/pactus/releases/latest | grep "tag_name" | cut -d'"' -f4) && \
+rm -rf node_pactus && \
+wget https://github.com/pactus-project/pactus/releases/download/${LATEST}/pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+tar -xzf pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+rm -rf pactus-cli_${LATEST#v}_linux_amd64.tar.gz && \
+mv pactus-cli_${LATEST#v} node_pactus && \
+cd node_pactus  && sudo ./pactus-daemon start
 ```
 Sett Validator Running : select / input : 1
