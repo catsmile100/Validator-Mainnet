@@ -53,7 +53,9 @@ sudo ./pactus-daemon start
 ```
 ./pactus-daemon init --restore "<your-mnemonic>"
 ```
-
+```
+sudo ./pactus-daemon start
+```
 ### Sett Validator Running
 ```
 select / input : 1
